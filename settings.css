@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: right;
+}
+
+article {
+    margin: 1rem 0;
+}
+
+fieldset {
+    margin: .5rem 0;
+    padding: .2rem 0 .8rem;
+    border: solid #ddd;
+    border-width: 0 0 1px;
+}
+
+button {
+    width: 3.5rem;
+    margin-top: .5rem !important;
+}
+
+input[type=checkbox] {
+    margin-right: .25rem;
+}
+
+input[type=password], input[type=text], input[type=url] {
+    position: relative;
+    display: inline-block;
+    width: 49%;
+    margin: 1%;
+}
+
+input[type=url] {
+    width: 75%;
+}
+
+input[type=password]:first-child, input[type=text]:first-child, input[type=url]:first-child {
+    margin-left: 0;
+}
+
+input[type=password]:last-child, input[type=text]:last-child, input[type=url]:last-child {
+    margin-right: 0;
+}
+
+input:invalid {
+    border-color: #D00000 !important;
+}
+
+label {
+    display: inline-block;
+    width: 24%;
+    text-align: right;
+}
+
+p {
+    font-size: .6rem;
+    line-height 1.6;
+    text-align: center;
+}
