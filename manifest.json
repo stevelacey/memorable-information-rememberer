@@ -1,8 +1,8 @@
 {
   "name": "Memorable Information Rememberer",
-  "description": "Autocomplete memorable information forms",
+  "description": "Autocomplete memorable information forms, such as those often found on UK online banking",
   "manifest_version": 2,
-  "version": "0.1.0",
+  "version": "0.1.1",
 
   "content_scripts": [{
     "js": ["autocomplete.js"],
