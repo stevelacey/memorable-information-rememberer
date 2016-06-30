@@ -60,12 +60,12 @@ function autocomplete(section, memory) {
         var text = label.textContent.toLowerCase();
         if (text.indexOf('character') !== -1 || text.indexOf('number') !== -1) {
             var field = ctx.getElementById(label.attributes['for'].value);
-            var char = memory.value[text.replace(/[^0-9]/g, '') - 1];
+            var char = memory.value[text.replace(/[^0-9]/g, '') - 1].toLowerCase();
             if (field.nodeName == 'SELECT') {
                 var options = field.children;
                 for (var o = 0; o < options.length; o++) {
                     var option = options[o];
-                    if (option.textContent.indexOf(char) !== -1 && option.value.replace('-', '')) {
+                    if (option.textContent.toLowerCase().indexOf(char) !== -1 && option.value.replace('-', '')) {
                         autocompletion = true
                         field.value = option.value;
                     }
